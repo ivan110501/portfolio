@@ -133,7 +133,7 @@ const Home = () => {
             </Button>
             <Button color="blue">Hire me</Button>
             <Button color="blue" leftElement={<IconAdd />}>
-              Folow
+              Follow
             </Button>
           </div>
         </div>
@@ -165,9 +165,9 @@ const Home = () => {
               })}
             </div>
 
-            <div style={{ height: "2rem" }}>
+            <div style={{ height: "5rem" }}>
               <img
-                style={{ width: "10rem" }}
+                style={{ width: "8rem" }}
                 src={activePokemon?.sprites.front_default}
                 alt=""
               />
