@@ -5,8 +5,4 @@ export const navigationData: LinkType[] = [
     href: "/",
     label: "Home",
   },
-  {
-    href: "/skills",
-    label: "Skills",
-  },
 ];
