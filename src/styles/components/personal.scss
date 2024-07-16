@@ -1,0 +1,111 @@
+.personal {
+  background-color: var(--color-white);
+  box-shadow: 0 5px 36px -9px var(--color-gray-400);
+  border-radius: var(--border-rounded);
+  overflow: hidden;
+  font-family: "Signika Negative", sans-serif;
+  &__top {
+    height: 15rem;
+    background: url("https://i0.hippopx.com/photos/456/479/601/chile-andes-landscape-snow-mountains-preview.jpg");
+    background-position: 50%;
+    background-size: cover;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    @media (max-width: 40em) {
+      flex-direction: column;
+    }
+    &__img {
+      flex-shrink: 0;
+      border-radius: var(--border-circle);
+      padding: 0.35rem;
+      background-color: var(--color-blue-500);
+      cursor: pointer;
+      margin-top: -8rem;
+      height: 100%;
+      @media (max-width: 40em) {
+        align-self: center;
+      }
+      &:hover {
+        img {
+          box-shadow: 0 0.5rem 36px 0 var(--color-black);
+          transform: scale(1.2) translateY(-0.875rem);
+        }
+      }
+      img {
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        box-shadow: 0 0 0px 0px var(--color-black);
+        object-fit: cover;
+        border-radius: var(--border-circle);
+        transition: all 250ms ease;
+      }
+    }
+    &__info {
+      flex-grow: 1;
+      margin-left: 1rem;
+      @media (max-width: 40em) {
+        margin-left: 0;
+        margin-top: 2rem;
+        align-self: center;
+      }
+    }
+    &__actions {
+      display: flex;
+      align-self: center;
+      gap: 0.5rem;
+      @media (max-width: 60em) {
+        display: none;
+      }
+    }
+    &__name {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-gray-900);
+    }
+    &__description {
+      opacity: 0.6;
+    }
+  }
+  &__body {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    @media (max-width: 60em) {
+      flex-direction: column;
+    }
+
+    &__pannel {
+      background-color: var(--color-gray-100);
+      padding: 2rem 1rem;
+      border-radius: var(--border-rounded);
+    }
+    &__main {
+      flex-grow: 1;
+    }
+    &__side {
+      flex-shrink: 0;
+      width: 30rem;
+      @media (max-width: 60em) {
+        width: 100%;
+      }
+    }
+    &__title {
+      color: var(--color-gray-900);
+      font-size: 1.25rem;
+      margin-bottom: 0;
+    }
+    &__subtitle {
+      color: var(--color-gray-800);
+      font-size: 0.875rem;
+      margin-bottom: 0;
+    }
+    &__p {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+}

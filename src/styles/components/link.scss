@@ -1,0 +1,12 @@
+.link {
+  color: var(--color-black);
+  display: block;
+  margin: 0.5rem;
+  margin-left: 0;
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

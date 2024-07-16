@@ -1,0 +1,17 @@
+.react-time-picker {
+  background-color: var(--color-white);
+  width: 100%;
+  &__wrapper {
+    padding: 0.25rem 0.5rem;
+    border-color: var(--color-gray-200);
+    border-radius: var(--border-rounded);
+    button {
+      &:hover svg {
+        stroke: var(--color-blue-400) !important;
+      }
+      svg {
+        stroke: var(--color-gray-400);
+      }
+    }
+  }
+}

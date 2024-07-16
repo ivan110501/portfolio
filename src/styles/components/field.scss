@@ -1,0 +1,22 @@
+.field {
+  margin-bottom: 1rem;
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  &__validation {
+    color: var(--color-red-400);
+    margin-top: 0;
+  }
+  &__group {
+    display: flex;
+  }
+  &--food {
+    input,
+    textarea,
+    select {
+      width: 100%;
+      display: block;
+    }
+  }
+}

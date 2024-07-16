@@ -1,0 +1,30 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+
+  &__card {
+    padding: 2rem;
+    border-radius: var(--border-rounded);
+    width: 50%;
+    background-color: var(--color-purple-400);
+    color: var(--color-white);
+    &__img {
+      width: 10rem;
+      height: 10rem;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: var(--border-circle);
+    }
+    &__name {
+      font-size: 2rem;
+      text-align: center;
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+  &__form {
+    width: 50%;
+    padding-left: 2rem;
+  }
+}

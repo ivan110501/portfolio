@@ -1,0 +1,54 @@
+.button {
+  border: none;
+  border-radius: var(--border-rounded);
+  padding: 0.5rem 2rem;
+  background-color: var(--color-gray-400);
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  //sizes
+  &--md {
+    padding: 0.5rem 2rem;
+  }
+  &--lg {
+    padding: 1rem 3rem;
+  }
+  //colors
+  &--purple {
+    background-color: var(--color-purple-400);
+    &:hover {
+      background-color: var(--color-purple-500);
+    }
+  }
+  &--blue {
+    background-color: var(--color-blue-400);
+    &:hover {
+      background-color: var(--color-blue-500);
+    }
+  }
+}
+
+.pokebutton {
+  background: #5e5df0;
+  border-radius: 1rem;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin: 0.25rem;
+}

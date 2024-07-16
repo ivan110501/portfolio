@@ -1,0 +1,28 @@
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-circle);
+  background-color: var(--color-gray-200);
+  margin-right: 0.5rem;
+  &:last-child {
+    margin-right: 0;
+  }
+  &--md {
+    padding: 0.25rem 0.5rem;
+  }
+  &--sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    color: var(--color-black);
+    flex-wrap: wrap;
+    &--left {
+      justify-content: flex-start;
+    }
+  }
+}

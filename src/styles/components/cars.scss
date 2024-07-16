@@ -1,0 +1,42 @@
+.cars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  border-radius: var(--border-rounded);
+  font-family: "IBM Plex Sans", sans-serif;
+
+  &__card {
+    color: var(--color-white);
+    padding: 2rem;
+
+    &:nth-child(1) {
+      background-color: #e28525;
+    }
+    &:nth-child(2) {
+      background-color: #016972;
+    }
+    &:nth-child(3) {
+      background-color: #00403f;
+    }
+  }
+  &__img {
+    width: 3rem;
+    filter: grayscale(1) invert(1);
+  }
+  &__title {
+    font-size: 2rem;
+  }
+  &__desc {
+    line-height: 180%;
+    margin-bottom: 8rem;
+  }
+  &__btn {
+    cursor: pointer;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    font-weight: 500;
+  }
+}
