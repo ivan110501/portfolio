@@ -1,4 +1,4 @@
-import { useState, useEffect, MouseEvent } from "react";
+import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Select from "react-select";
 
@@ -18,7 +18,6 @@ type ActivePokemonType = {
     front_default: string;
   };
 };
-type ActivePokemonResponseType = ActivePokemonType;
 
 //ItemPerPage
 type OptionType = {

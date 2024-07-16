@@ -4,7 +4,7 @@ import DatePicker from "react-date-picker";
 import TimePicker from "react-time-picker";
 
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import * as yup from "yup";
 
 // Define Yup schema for validation
@@ -34,16 +34,10 @@ const Glovo = () => {
   const [time, setTime] = useState<string | null>("10:00");
 
   const {
-    register,
-    handleSubmit,
-    formState: { errors },
+    formState: {},
   } = useForm<FormValues>({
     resolver: yupResolver(schema),
   });
-
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log(data);
-  };
 
   return (
     <>
