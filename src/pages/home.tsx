@@ -7,7 +7,6 @@ import croatiaFlagUrl from "../assets/croatia.png";
 import IconArrowTopRight from "../assets/arrow-top-right";
 
 import { useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
 import Select from "react-select";
 
 type ProfileDataType = {
